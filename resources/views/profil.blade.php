@@ -40,50 +40,50 @@
         @endif
         <div class="profileform-container">
             <div class="profilegrid"></div>
-            <form role="form" action="{{route('home.update')}}" method="POST" enctype="multipart/form-data">
-                {{ csrf_field() }}
-            <div class="profileform">
-                <div class="profilegrid">
-                    <!--nanti tolong dihubungin ke foto yang diinput-->
-                    @if(isset($foto))
-                        <img src="{{asset('assets/foto/'.$foto)}}" style="width:100%;height:50%">
-                        <input type="file" name="file" accept=".png, .jpeg, .jpg" class="form-control" >
-                    @else
-                        <img src="{{asset('assets/foto/noimage.png')}}" style="width:100%">
-                        <input type="file" name="file" accept=".png, .jpeg, .jpg" class="form-control" >
-                    @endif
-                </div>
-                <div class="profilegrid">
-                    <h2>Profile</h2>
-                    <div class="profile-input">
-                        <input type="hidden" name="page" value="profile">
-                        <input type="hidden" name="id" value="{{session('id')}}">
-                        <p>Nama</p>
-                        <input type="text" id="nama" name="nama" required>
-                        <p>Jabatan</p>
-                        {{--<input type="text" id="jabatan" name="jabatan">--}}
-
-                        <select name="jabatan" id="jabatan" style="border-radius: 12px;border: none;margin-top: 10px;box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);" required>
-                            @if($jabatan)
-                                <option value="{{$jabatan}}" selected>{{ucwords($jabatan)}}</option>
+                <form role="form" action="{{route('home.update')}}" method="POST" enctype="multipart/form-data">
+                    {{ csrf_field() }}
+                    <div class="profileform">
+                        <div class="profilegrid">
+                            <!--nanti tolong dihubungin ke foto yang diinput-->
+                            @if(isset($foto))
+                                <img src="{{asset('assets/foto/'.$foto)}}" style="width:100%;height:50%">
+                                <input type="file" name="file" accept=".png, .jpeg, .jpg" class="form-control" >
+                            @else
+                                <img src="{{asset('assets/foto/noimage.png')}}" style="width:100%">
+                                <input type="file" name="file" accept=".png, .jpeg, .jpg" class="form-control" >
                             @endif
-                            <option vlaue=""></option>
-                            <option value="bos">Bos</option>
-                            <option value="staff">Staff</option>
-                        </select>
-                        <p>Email</p>
-                        <input type="text" id="email" name="email" value="{{$email}}" required>
-                        <p>Password</p>
-                        <input type="password" id="password" name="password" required
-                               style="border-radius: 12px;
-                                        border: none;
-                                        margin-top: 10px;
-                                        box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);"
-                        >
+                        </div>
+                        <div class="profilegrid">
+                            <h2>Profile</h2>
+                            <div class="profile-input">
+                                <input type="hidden" name="page" value="profile">
+                                <input type="hidden" name="id" value="{{session('id')}}">
+                                <p>Nama</p>
+                                <input type="text" id="nama" name="nama" required>
+                                <p>Jabatan</p>
+                                {{--<input type="text" id="jabatan" name="jabatan">--}}
+                                <select name="jabatan" id="jabatan" style="border-radius: 12px;border: none;margin-top: 10px;box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);" required>
+                                @if($jabatan)
+                                    <option value="{{$jabatan}}" selected>{{ucwords($jabatan)}}</option>
+                                @endif
+                                    <option vlaue=""></option>
+                                    <option value="bos">Bos</option>
+                                    <option value="staff">Staff</option>
+                                </select>
+                                <p>Email</p>
+                                <input type="text" id="email" name="email" value="{{$email}}" required>
+                                <p>Password</p>
+                                <input type="password" id="password" name="password" required
+                                style="border-radius: 12px;
+                                    border: none;
+                                    margin-top: 10px;
+                                    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);"
+                                >
+                            </div>
+                            <button type="submit" class="updatebutton" href="profilupdate">Update</button>
+                        </div>
                     </div>
-                    <button type="submit" class="updatebutton" href="profilupdate">Update</button>
-                    </form>
-                </div>
+                </form>
             </div>
         </div>
         <div class="footer">

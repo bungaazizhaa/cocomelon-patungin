@@ -3,6 +3,12 @@
     src: url("Monda-Regular.ttf");
 }
 
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
 .topnav {
     background-color: #ffffff;
     overflow: hidden;
@@ -38,8 +44,13 @@
 
 }
 
-.topnav a.active {
-    color: #00C4C2;
+.topnav a:link,
+.topnav a:visited {
+    color: #333;
+}
+
+.topnav a:active {
+    color: #00c4c2;
 }
 
 /* Right-aligned section inside the top navigation */
@@ -196,6 +207,10 @@ a:visited {
     margin-top: 60px;
 }
 
+.footer .card{
+    margin-top: 50px;
+}
+
 .footer-h3 {
     font-family: Monda;
     color: #00C4C2;
@@ -270,13 +285,13 @@ a:visited {
 }
 
 .profileform-container {
-    display: flex;
+    display: grid;
+    height: 600px;
+    justify-content: center;
 }
 
 .profileform {
     margin-top: 75px;
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 75px;
     width: 1000px;
     height: 450px;
@@ -322,16 +337,16 @@ a:visited {
 }
 
 .updateform-container {
-    display: flex;
+    display: grid;
+    height: 600px;
+    justify-content: center;
 }
 
 .updateform {
     margin-top: 75px;
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 75px;
     width: 1000px;
-    height: 550px;
+    height: auto;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
     border-radius: 20px;
     display: grid;
@@ -409,7 +424,7 @@ a:visited {
     margin-right: auto;
     margin-bottom: 75px;
     width: 1200px;
-    height: 900px;
+    height: auto;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
     border-radius: 20px;
     display: grid;
@@ -419,6 +434,7 @@ a:visited {
 
 .producttable > .producttable-grid {
     margin-top: 50px;
+    margin-bottom: 50px;
     width: 1000px;
 }
 
