@@ -1,0 +1,655 @@
+@font-face {
+    font-family: Monda;
+    src: url("Monda-Regular.ttf");
+}
+
+.topnav {
+    background-color: #ffffff;
+    overflow: hidden;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.alert {
+    background-color: bisque;
+    overflow: hidden;
+    margin-top: 20px;
+    height: 50px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.alert2 {
+    background-color: bisque;
+    overflow: hidden;
+    margin-top: -10px;
+    height: 50px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #333;
+    text-align: center;
+    padding: 5px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: Monda;
+    margin-top: 7px;
+    margin-bottom: 7px;
+
+}
+
+.topnav a.active {
+    color: #00C4C2;
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+    float: right;
+    font-family: Monda;
+}
+
+.logo-image {
+    width: 100px;
+    height: 26px;
+    margin-top: -3px;
+    margin-left: 10px;
+}
+
+.image-fluid {
+    max-width: 200px;
+    height: auto;
+}
+
+.login-button {
+    background-color: #00C4C2;
+    color: #ffffff;
+    border-radius: 12px;
+    margin-right: 10px;
+    width: 100px;
+}
+
+.bg-container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.landingpage-logo {
+    width: 400px;
+    height: auto;
+    margin-top: -600px;
+    margin-left: 100px;
+    position: absolute;
+}
+
+.landingpage-jargon {
+    width: 400px;
+    margin-top: -400px;
+    margin-left: 100px;
+    position: absolute;
+    font-family: Monda;
+    color: black;
+    font-size: 20px;
+}
+
+.landingpage-daftar {
+    width: 100px;
+    height: auto;
+    margin-top: -320px;
+    margin-left: 130px;
+    position: absolute;
+    font-family: Monda;
+    font-size: 16px;
+}
+
+.register-button {
+    background-color: #00C4C2;
+    color: #ffffff;
+    padding: 7px 36px;
+    border-radius: 12px;
+    width: 100px;
+}
+
+.centertext {
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+    font-family: Monda;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.satu {
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    margin-right: 38%;
+    margin-left: 38%;
+    margin-top: -450px;
+    text-align: center;
+    font-family: Monda;
+    font-size: 16px;
+    color: black;
+}
+
+.duatiga {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 300px 300px;
+    justify-content: space-evenly;
+    margin-right: 27%;
+    margin-left: 27%;
+    margin-top: -250px;
+    text-align: center;
+    font-family: Monda;
+    font-size: 16px;
+    color: black;
+}
+
+.container-carakerja {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 350px 350px;
+    justify-content: space-evenly;
+    font-family: Monda;
+    text-align: center;
+}
+
+.isian {
+    padding: 2px 16px;
+}
+
+.isian > p > a:link,
+a:visited {
+    color: white;
+    font-family: Monda;
+    text-decoration: none;
+}
+
+.isian > p > a > img {
+    margin-right: 10px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 450px 300px 300px;
+    justify-content: center;
+}
+
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 250px;
+    background-color: black;
+    color: white;
+    text-align: left;
+}
+
+.footer-image {
+    height: auto;
+}
+
+.footer-fluid {
+    max-width: 200px;
+    height: auto;
+    margin-top: 60px;
+}
+
+.footer-h3 {
+    font-family: Monda;
+    color: #00C4C2;
+}
+
+.loginform-container {
+    display: flex;
+}
+
+.loginform {
+    margin-top: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 75px;
+    width: 1000px;
+    height: 390px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 400px 400px;
+    justify-content: space-evenly;
+    font-family: Monda;
+}
+
+.loginform > .logingrid {
+    margin-top: 50px;
+}
+
+.login-input {
+    display: grid;
+    grid-template-columns: 100px 250px;
+    grid-template-rows: 50px 50px;
+    justify-content: space-evenly;
+}
+
+.login-input > input[type="text"] {
+    border-radius: 12px;
+    border: none;
+    margin-top: 10px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.login-input > input[type="password"] {
+    border-radius: 12px;
+    border: none;
+    margin-top: 10px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.loginform > p > a {
+    color: #00C4C2;
+    text-decoration: none;
+}
+
+.logingrid > p {
+    margin-top: 30px;
+    font-size: 12px;
+}
+
+.loginbutton {
+    background-color: #00C4C2;
+    border: none;
+    color: white;
+    border-radius: 12px;
+    padding: 7px 36px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 30px;
+    font-family: Monda;
+}
+
+.profileform-container {
+    display: flex;
+}
+
+.profileform {
+    margin-top: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 75px;
+    width: 1000px;
+    height: 450px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 350px 450px;
+    justify-content: space-evenly;
+    font-family: Monda;
+}
+
+.profileform > .profilegrid {
+    margin-top: 50px;
+}
+
+.profile-input {
+    display: grid;
+    grid-template-columns: 100px 250px;
+    grid-template-rows: 50px 50px 50px 50px;
+    justify-content: space-evenly;
+}
+
+.profile-input > input[type="text"] {
+    border-radius: 12px;
+    border: none;
+    margin-top: 10px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.updatebutton {
+    background-color: #00C4C2;
+    border: none;
+    color: white;
+    border-radius: 12px;
+    padding: 7px 36px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 288px;
+    margin-top: 20px;
+    font-family: Monda;
+}
+
+.updateform-container {
+    display: flex;
+}
+
+.updateform {
+    margin-top: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 75px;
+    width: 1000px;
+    height: 550px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 350px 450px;
+    justify-content: space-evenly;
+    font-family: Monda;
+}
+
+.updateform > .updategrid {
+    margin-top: 50px;
+}
+
+.update-input {
+    display: grid;
+    grid-template-columns: 150px 250px;
+    grid-template-rows: 50px 50px 50px 50px 50px;
+    justify-content: space-evenly;
+}
+
+.update-input > input[type="text"] {
+    border-radius: 12px;
+    border: none;
+    margin-top: 10px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.update-input > input[type="file"] {
+    margin-top: 20px;
+}
+
+.updatebutton2 {
+    background-color: #00C4C2;
+    border: none;
+    color: white;
+    border-radius: 12px;
+    padding: 7px 36px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 307px;
+    margin-top: 20px;
+    font-family: Monda;
+}
+
+.tambahprod-container{
+    display: grid;
+    justify-content: right;
+    margin-top: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -50px;
+    width: 1200px;
+}
+
+.tambahproduk{
+    background-color: #00C4C2;
+    border: none;
+    color: white;
+    border-radius: 12px;
+    padding: 7px 36px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Monda;
+}
+
+.producttable-container {
+    display: flex;
+}
+
+.producttable {
+    margin-top: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 75px;
+    width: 1200px;
+    height: 900px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    display: grid;
+    justify-content: center;
+    font-family: Monda;
+}
+
+.producttable > .producttable-grid {
+    margin-top: 50px;
+    width: 1000px;
+}
+
+table#showtable {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: none;
+    text-align: center;
+
+}
+
+table#showtable tr,
+td {
+    width: 10%;
+    border: none;
+    padding: 10px;
+    font-size: 0.8em;
+}
+
+table#showtable .editbutton {
+    background-color: rgb(35, 192, 35);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 3px 20px;
+    text-align: center;
+}
+
+table#showtable .deletebutton {
+    background-color: rgb(216, 48, 48);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 3px 20px;
+    text-align: center;
+}
+
+.staff-nextbutton {
+    background-color: #00C4C2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 7px 32px;
+    text-align: center;
+    font-size: 16px;
+    float: right;
+    margin-right: 48px;
+    margin-top: 30px;
+}
+
+.bos-nextbutton {
+    background-color: #00C4C2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 7px 32px;
+    text-align: center;
+    font-size: 16px;
+    float: right;
+    margin-right: 70px;
+    margin-top: 30px;
+}
+.header-container {
+    display: flex;
+}
+
+.produk-header{
+    display: grid;
+    width: 100%;
+    height: 150px;
+    background-color: #EEDB90;
+    text-align: center;
+    font-family: Monda;
+}
+
+.produkform-container {
+    display: flex;
+}
+
+.produkform {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 75px;
+    width: 1200px;
+    height: 450px;
+    display: grid;
+    grid-template-columns: 500px 500px;
+    justify-content: space-evenly;
+    font-family: Monda;
+}
+
+.produkform > .produkgrid {
+    margin-top: 50px;
+}
+
+.produk-input {
+    display: grid;
+    grid-template-columns: 250px 250px;
+    grid-template-rows: 50px 50px 50px 50px;
+    justify-content: space-evenly;
+}
+
+.produk-input > input[type="text"] {
+    border-radius: 12px;
+    border: none;
+    margin-top: 10px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.produkform > p > a {
+    color: #00C4C2;
+    text-decoration: none;
+}
+
+.produkgrid > p {
+    margin-top: 30px;
+    font-size: 12px;
+}
+
+.produkbutton {
+    background-color: #00C4C2;
+    border: none;
+    color: white;
+    border-radius: 12px;
+    padding: 7px 36px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 30px;
+    font-family: Monda;
+}
+
+.dashboard-container {
+    display: flex;
+}
+
+.dashboard-grid {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    width: 1000px;
+    height: 450px;
+    display: grid;
+    grid-template-columns: 400px 400px;
+    justify-content: space-evenly;
+    font-family: Monda;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.dashboard-grid > .graphgrid {
+    margin-top: 50px;
+}
+
+.tabletitle-container{
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    height: 50px;
+    display: grid;
+    grid-template-columns: 400px 400px;
+    justify-content: space-evenly;
+    font-family: Monda;
+    font-size: 14px;
+    text-align: center;
+}
+
+.table-grid {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    width: 1000px;
+    height: 350px;
+    display: grid;
+    grid-template-columns: 400px 400px;
+    justify-content: space-evenly;
+    font-family: Monda;
+    font-size: 12px;
+    text-align: center;
+}
+
+.table-grid > .tablecard {
+    margin-top: 50px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+}
+
+.table-grid > .tablecard > table#dashboardtable{
+    margin-top: 35px;
+}
+
+table#dashboardtable tr,
+td {
+    width: 15%;
+    border: none;
+    padding: 10px;
+}
+
+.transaksiform {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 75px;
+    width: 1200px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 500px 500px;
+    justify-content: space-evenly;
+    font-family: Monda;
+}
+
+.transaksiform > .transaksigrid {
+    margin-top: 50px;
+}
+
+.transaksi-input {
+    display: grid;
+    grid-template-columns: 250px 250px;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px;
+    justify-content: space-evenly;
+}
+
+.transaksi-input > input[type="text"] {
+    border-radius: 12px;
+    border: none;
+    margin-top: 10px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+}
