@@ -17,7 +17,7 @@
             <div class="topnav-right">
                 <a href="{{'/'}}">Beranda</a>
                 <a href="{{route('lp.index')}}#tentang">Tentang</a>
-                <a href="{{route('lp.index')}}#carakerja">Cara kerja</a><
+                <a href="{{route('lp.index')}}#carakerja">Cara kerja</a>
                 <a class="login-button" href="{{route('home.login')}}">Login</a>
             </div>
         </div>
