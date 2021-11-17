@@ -17,7 +17,7 @@
                 </div>
             </a>
             <div class="topnav-right">
-                <a href="{{'/'}}">Beranda</a>
+                <a class="active" href="{{'/'}}">Beranda</a>
                 <a href="#tentang">Tentang</a>
                 <a href="#carakerja">Cara kerja</a>
                 @if(session('login') == TRUE)

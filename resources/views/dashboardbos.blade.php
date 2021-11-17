@@ -25,7 +25,7 @@
         <div class="header-container">
             <div class="produk-header">
                 @if(!empty(session('name')))
-                    <h2>Selamat datang {{session('name')}}</h2>
+                    <h2 style="margin-top: 30px;">Selamat datang {{session('name')}}</h2>
                 @else
                     <h2>Selamat datang {{session('email')}}</h2>
                 @endif

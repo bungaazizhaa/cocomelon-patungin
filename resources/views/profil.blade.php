@@ -28,7 +28,7 @@
                     <a href="{{route('lp.transaksistaff')}}">Transaksi</a>
                     <a href="{{route('lp.produkstaff')}}">Produk</a>
                 @endif
-                    <a href="{{url('lp/profile')}}/{{session('id')}}">Profile</a>
+                    <a class="active" href="{{url('lp/profile')}}/{{session('id')}}">Profile</a>
                     <a class="login-button" href="{{route('home.logout')}}">Logout</a>
             </div>
         </div>
@@ -46,16 +46,16 @@
                         <div class="profilegrid">
                             <!--nanti tolong dihubungin ke foto yang diinput-->
                             @if(isset($foto))
-                                <img src="{{asset('assets/foto/'.$foto)}}" style="width:100%;height:50%">
+                                <img class="profileimg" src="{{asset('assets/foto/'.$foto)}}">
                                 <input type="file" name="file" accept=".png, .jpeg, .jpg" class="form-control" >
                             @else
-                                <img src="{{asset('assets/foto/noimage.png')}}" style="width:100%">
+                                <img class="profileimg" src="{{asset('assets/foto/noimage.png')}}">
                                 <input type="file" name="file" accept=".png, .jpeg, .jpg" class="form-control" >
                             @endif
                         </div>
                         <div class="profilegrid">
                             <h2>Profile</h2>
-                            <div class="profile-input">
+                            <div class="profile-input" style="margin-top: 30px;">
                                 <input type="hidden" name="page" value="profile">
                                 <input type="hidden" name="id" value="{{session('id')}}">
                                 <p>Nama</p>
@@ -66,7 +66,7 @@
                                 @if($jabatan)
                                     <option value="{{$jabatan}}" selected>{{ucwords($jabatan)}}</option>
                                 @endif
-                                    <option vlaue=""></option>
+                                    <option value=""></option>
                                     <option value="bos">Bos</option>
                                     <option value="staff">Staff</option>
                                 </select>

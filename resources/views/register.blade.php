@@ -26,30 +26,45 @@
                 <p style="margin-left: 10px;font-weight: bold">{{session('alerts')}}</p>
             </div>
         @endif
-        <div class="loginform-container">
-            <div class="loginform">
-                <div class="logingrid">
-                    <img src="{{asset('assets/images/Register-img.png')}}" style="width:100%">
-                </div>
-                <div class="logingrid">
-                    <h2>Register</h2>
-                    <form role="form" action="{{route('home.store')}}" method="POST">
-                        {{ csrf_field() }}
-                    <div class="login-input">
-                        <p>Email</p>
-                        <input type="text" id="email" name="email" required>
-                        <p>Password</p>
-                        <input type="password" id="password" name="password" required
-                               style="border-radius: 12px;
-                                        border: none;
-                                        margin-top: 10px;
-                                        box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);"
-                        >
+        <div class="regisform-container">
+            <form role="form" action="{{route('home.store')}}" method="POST">
+                {{ csrf_field() }}
+                <div class="regisform">
+                    <div class="regisgrid">
+                        @if(isset($foto))
+                            <img class="profileimg" src="{{asset('assets/foto/'.$foto)}}">
+                            <input type="file" name="file" accept=".png, .jpeg, .jpg" class="form-control" >
+                        @else
+                            <img class="profileimg" src="{{asset('assets/foto/noimage.png')}}">
+                            <input type="file" name="file" accept=".png, .jpeg, .jpg" class="form-control" >
+                        @endif
                     </div>
-                    <p style="margin-left: 17px; margin-top: 20px; font-size: 12px;">Sudah punya akun? <a href="{{route('home.login')}}" style="color:rgb(46, 156, 160)">Login sekarang!</a><button type="submit" class="loginbutton" style="float: right;">Register</button></p>
-                    </form>
+                    <div class="regisgrid">
+                        <h2>Register</h2>
+                        <div class="regis-input" style="margin-top: 30px;">
+                            <p>Email</p>
+                            <input type="text" id="email" name="email" required>
+                            <p>Password</p>
+                            <input type="password" id="password" name="password" required
+                                style="border-radius: 12px;
+                                            border: none;
+                                            margin-top: 10px;
+                                            box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);"
+                            >
+                            <p>Nama</p>
+                            <input type="text" id="nama" name="nama" required>
+                            <p>Jabatan</p>
+                            {{--<input type="text" id="jabatan" name="jabatan" required>--}}
+                            <select name="jabatan" id="jabatan" clas="form-control" style="border-radius: 12px;border: none;margin-top: 10px;box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);" required>
+                                <option value=""></option>
+                                <option value="bos">Bos</option>
+                                <option value="staff">Staff</option>
+                            </select>
+                        </div>
+                        <p style="margin-left: 17px; margin-top: 20px; font-size: 12px;">Sudah punya akun? <a href="{{route('home.login')}}" style="color:rgb(46, 156, 160)">Login sekarang!</a><button type="submit" class="regisbutton" style="float: right;">Register</button></p>
+                    </div>
                 </div>
-            </div>
+            </form>
         </div>
         <div class="footer">
             <div class="footer-container">

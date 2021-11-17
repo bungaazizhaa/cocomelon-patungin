@@ -44,16 +44,16 @@
                 <div class="updategrid">
                     <!--nanti tolong dihubungin ke foto yang diinput-->
                     @if(isset($foto))
-                        <img src="{{asset('assets/foto/'.$foto)}}" style="width:100%;height:50%">
+                        <img class="profileimg" src="{{asset('assets/foto/'.$foto)}}">
                         <input type="file" name="file" accept=".png, .jpeg, .jpg" class="form-control" >
                     @else
-                        <img src="{{asset('assets/foto/noimage.png')}}" style="width:100%">
+                        <img class="profileimg" src="{{asset('assets/foto/noimage.png')}}">
                         <input type="file" name="file" accept=".png, .jpeg, .jpg" class="form-control" >
                     @endif
                 </div>
                 <div class="updategrid">
                     <h2>Profile</h2>
-                    <div class="update-input">
+                    <div class="update-input" style="margin-top: 30px;">
                         <input type="hidden" name="page" value="profileUpdate">
                         <input type="hidden" name="id" value="{{session('id')}}">
                         <p>Nama</p>

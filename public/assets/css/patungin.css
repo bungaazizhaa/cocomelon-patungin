@@ -33,7 +33,6 @@
 /* Style the links inside the navigation bar */
 .topnav a {
     float: left;
-    color: #333;
     text-align: center;
     padding: 5px 16px;
     text-decoration: none;
@@ -44,13 +43,24 @@
 
 }
 
-.topnav a:link,
+.topnav a:link {
+    color: #333;
+}
+
 .topnav a:visited {
     color: #333;
 }
 
+.topnav a:focus {
+    color: #00C4C2;
+}
+
+.topnav a:hover {
+    color: #00C4C2;
+}
+
 .topnav a:active {
-    color: #00c4c2;
+    color: #00C4C2;
 }
 
 /* Right-aligned section inside the top navigation */
@@ -78,6 +88,15 @@
     margin-right: 10px;
     width: 100px;
 }
+
+.login-button:hover {
+    background-color: #167574;
+    color: #ffffff;
+    border-radius: 12px;
+    margin-right: 10px;
+    width: 100px;
+}
+
 
 .bg-container {
     position: relative;
@@ -119,6 +138,11 @@
     padding: 7px 36px;
     border-radius: 12px;
     width: 100px;
+}
+
+.register-button:hover{
+    background-color: #167574;
+    color: #ffffff;
 }
 
 .centertext {
@@ -246,18 +270,16 @@ a:visited {
     justify-content: space-evenly;
 }
 
-.login-input > input[type="text"] {
+.login-input > input[type="text"], input[type="password"], input[type="email"] {
     border-radius: 12px;
     border: none;
     margin-top: 10px;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+    padding-left: 10px;
 }
 
-.login-input > input[type="password"] {
-    border-radius: 12px;
-    border: none;
-    margin-top: 10px;
-    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+.login-input > p{
+    margin-top: 15px;
 }
 
 .loginform > p > a {
@@ -284,6 +306,78 @@ a:visited {
     font-family: Monda;
 }
 
+.loginbutton:hover{
+    background-color: #167574;
+    color: #ffffff;
+}
+
+.regisform {
+    margin-top: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 75px;
+    width: 1000px;
+    height: 450px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 400px 400px;
+    justify-content: space-evenly;
+    font-family: Monda;
+}
+
+.regisform > .regisgrid {
+    margin-top: 50px;
+}
+
+.regis-input {
+    display: grid;
+    grid-template-columns: 100px 250px;
+    grid-template-rows: 50px 50px 50px 50px;
+    justify-content: space-evenly;
+}
+
+.regis-input > input[type="text"], input[type="password"], input[type="email"], select {
+    border-radius: 12px;
+    border: none;
+    margin-top: 10px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+    padding-left: 10px;
+}
+
+.regis-input > p{
+    margin-top: 15px;
+}
+
+.regisform > p > a {
+    color: #00C4C2;
+    text-decoration: none;
+}
+
+.regisgrid > p {
+    margin-top: 30px;
+    font-size: 12px;
+}
+
+.regisbutton {
+    background-color: #00C4C2;
+    border: none;
+    color: white;
+    border-radius: 12px;
+    padding: 7px 36px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 30px;
+    font-family: Monda;
+}
+
+.regisbutton:hover{
+    background-color: #167574;
+    color: #ffffff;
+}
+
 .profileform-container {
     display: grid;
     height: 600px;
@@ -303,6 +397,11 @@ a:visited {
     font-family: Monda;
 }
 
+.profileimg{
+    width: auto;
+    max-height: 350px;
+}
+
 .profileform > .profilegrid {
     margin-top: 50px;
 }
@@ -314,11 +413,12 @@ a:visited {
     justify-content: space-evenly;
 }
 
-.profile-input > input[type="text"] {
+.profile-input > input[type="text"], input[type="password"], input[type="email"], select {
     border-radius: 12px;
     border: none;
     margin-top: 10px;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+    padding-left: 10px;
 }
 
 .updatebutton {
@@ -336,9 +436,14 @@ a:visited {
     font-family: Monda;
 }
 
+.updatebutton:hover{
+    background-color: #167574;
+    color: #ffffff;
+}
+
 .updateform-container {
     display: grid;
-    height: 600px;
+    height: auto;
     justify-content: center;
 }
 
@@ -357,20 +462,26 @@ a:visited {
 
 .updateform > .updategrid {
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .update-input {
     display: grid;
     grid-template-columns: 150px 250px;
     grid-template-rows: 50px 50px 50px 50px 50px;
-    justify-content: space-evenly;
+    justify-content: left;
 }
 
-.update-input > input[type="text"] {
+.update-input > input[type="text"], input[type="password"], input[type="email"], select {
     border-radius: 12px;
     border: none;
     margin-top: 10px;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+    padding-left: 10px;
+}
+
+.update-input > p{
+    margin-top: 15px;
 }
 
 .update-input > input[type="file"] {
@@ -390,6 +501,11 @@ a:visited {
     margin-left: 307px;
     margin-top: 20px;
     font-family: Monda;
+}
+
+.updatebutton2:hover{
+    background-color: #167574;
+    color: #ffffff;
 }
 
 .tambahprod-container{
@@ -412,6 +528,11 @@ a:visited {
     text-decoration: none;
     font-size: 16px;
     font-family: Monda;
+}
+
+.tambahproduk:hover{
+    background-color: #167574;
+    color: #ffffff;
 }
 
 .producttable-container {
@@ -464,6 +585,11 @@ table#showtable .editbutton {
     text-align: center;
 }
 
+.table#showtable .editbutton:hover{
+    background-color: rgb(41, 107, 41);
+    color: white;
+}
+
 table#showtable .deletebutton {
     background-color: rgb(216, 48, 48);
     color: white;
@@ -471,6 +597,11 @@ table#showtable .deletebutton {
     border-radius: 5px;
     padding: 3px 20px;
     text-align: center;
+}
+
+.table#showtable .deletebutton {
+    background-color: rgb(87, 25, 25);
+    color: white;
 }
 
 .staff-nextbutton {
@@ -486,6 +617,11 @@ table#showtable .deletebutton {
     margin-top: 30px;
 }
 
+.staff-nextbutton:hover{
+    background-color: #167574;
+    color: #ffffff;
+}
+
 .bos-nextbutton {
     background-color: #00C4C2;
     color: white;
@@ -498,6 +634,12 @@ table#showtable .deletebutton {
     margin-right: 70px;
     margin-top: 30px;
 }
+
+.bos-nextbutton:hover{
+    background-color: #167574;
+    color: #ffffff;
+}
+
 .header-container {
     display: flex;
 }
@@ -568,6 +710,11 @@ table#showtable .deletebutton {
     font-size: 16px;
     margin-left: 30px;
     font-family: Monda;
+}
+
+.produkbutton:hover{
+    background-color: #167574;
+    color: #ffffff;
 }
 
 .dashboard-container {

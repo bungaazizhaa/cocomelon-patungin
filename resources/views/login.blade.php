@@ -38,7 +38,7 @@
                     <h2>Login</h2>
                     <form role="form" action="{{route('home.loginPost')}}" method="POST">
                      {{ csrf_field() }}
-                    <div class="login-input">
+                    <div class="login-input" style="margin-top: 30px;">
                         <p>Email</p>
                         <input type="text" id="email" name="email" required>
                         <p>Password</p>
