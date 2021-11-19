@@ -23,7 +23,7 @@
         </div>
         <div class="header-container">
             <div class="produk-header">
-                <h2>Edit transaksi di sini!</h2>
+                <h2 style="margin-top: 30px;">Edit transaksi di sini!</h2>
                 <p style="margin-top: -20px;">Masukkan data transaksi penjualan dan keuangan yang akan di edit</p>
             </div>
         </div>

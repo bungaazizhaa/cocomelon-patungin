@@ -49,7 +49,7 @@
                                         box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);"
                         >
                     </div>
-                    <p style="margin-left: 17px; margin-top: 20px; font-size: 12px;">Belum punya akun? <a href="{{route('lp.daftar')}}" style="color:rgb(46, 156, 160)">Register sekarang!</a><button type="submit" class="loginbutton" style="float: right;">Login</button></p>
+                    <p style="margin-top: 20px; font-size: 12px;">Belum punya akun? <a href="{{route('lp.daftar')}}" style="color:rgb(46, 156, 160)">Register sekarang!</a><button type="submit" class="loginbutton" style="margin-left: 15px;">Login</button></p>
                     </form>
                 </div>
             </div>

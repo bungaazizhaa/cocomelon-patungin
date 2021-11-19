@@ -23,7 +23,7 @@
         </div>
         <div class="header-container">
             <div class="produk-header">
-                <h2>Edit produk di sini!</h2>
+                <h2 style="margin-top: 30px;">Edit produk di sini!</h2>
                 <p style="margin-top: -20px;">Masukkan data produk yang akan diedit.</p>
             </div>
         </div>

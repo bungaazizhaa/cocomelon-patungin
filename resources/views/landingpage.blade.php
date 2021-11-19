@@ -66,10 +66,10 @@
             </div>
         </div>
         <div class="centertext" id="carakerja">
-            <h3>
+            <h2 style="margin-top: 30px; margin-bottom: 30px;">
                 <span style="color: rgb(46, 156, 160)">Cara kerja</span>
                 <span style="color: black">PaTungin</span>
-            </h3>
+            </h2>
         </div>
         <div class="container-carakerja">
             <div class="card">

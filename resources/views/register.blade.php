@@ -31,13 +31,7 @@
                 {{ csrf_field() }}
                 <div class="regisform">
                     <div class="regisgrid">
-                        @if(isset($foto))
-                            <img class="profileimg" src="{{asset('assets/foto/'.$foto)}}">
-                            <input type="file" name="file" accept=".png, .jpeg, .jpg" class="form-control" >
-                        @else
-                            <img class="profileimg" src="{{asset('assets/foto/noimage.png')}}">
-                            <input type="file" name="file" accept=".png, .jpeg, .jpg" class="form-control" >
-                        @endif
+                        <img src="{{asset('assets/images/Register-img.png')}}" style=" width:100%">
                     </div>
                     <div class="regisgrid">
                         <h2>Register</h2>
@@ -61,7 +55,7 @@
                                 <option value="staff">Staff</option>
                             </select>
                         </div>
-                        <p style="margin-left: 17px; margin-top: 20px; font-size: 12px;">Sudah punya akun? <a href="{{route('home.login')}}" style="color:rgb(46, 156, 160)">Login sekarang!</a><button type="submit" class="regisbutton" style="float: right;">Register</button></p>
+                        <p style="margin-top: 20px; font-size: 12px;">Sudah punya akun? <a href="{{route('home.login')}}" style="color:rgb(46, 156, 160)">Login sekarang!</a><button type="submit" class="regisbutton" style="margin-left: 10px;">Register</button></p>
                     </div>
                 </div>
             </form>
