@@ -823,6 +823,7 @@ td {
 }
 
 .chart{
+    margin-top: 10px;
     max-width: 100%;
-    height: 270px;
+    height: 310px;
 }
