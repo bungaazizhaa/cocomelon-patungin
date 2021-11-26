@@ -731,14 +731,13 @@ table#showtable .deletebutton {
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 20px;
     width: 1000px;
     height: 450px;
     display: grid;
-    grid-template-columns: 400px 400px;
+    grid-template-columns: 450px 450px;
     justify-content: space-evenly;
     font-family: Monda;
-    font-size: 14px;
+    font-size: 16px;
     text-align: justify;
 }
 
@@ -776,7 +775,7 @@ table#showtable .deletebutton {
 }
 
 .table-grid > .tablecard {
-    margin-top: 50px;
+    margin-top: 20px;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
     border-radius: 12px;
 }
@@ -821,4 +820,9 @@ td {
     border: none;
     margin-top: 10px;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.chart{
+    max-width: 100%;
+    height: 270px;
 }

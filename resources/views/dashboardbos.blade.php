@@ -6,6 +6,30 @@
             PaTungin - Dashboard
         </title>
         <link rel="stylesheet" href="{{ asset('assets/css/patungin.css')}}">
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript">
+            google.charts.load('current', {'packages':['bar']});
+            google.charts.setOnLoadCallback(drawChart);
+
+            function drawChart() {
+                //datanya taro disini
+                var data = google.visualization.arrayToDataTable([
+                ['Bulan', 'Pendapatan', 'Pengeluaran', 'Keuntungan'],
+                ['Juli', 1000000, 400000, 600000],
+                ['Agustus', 1170000, 460000, 710000],
+                ['September', 2660000, 1120000, 1540000],
+                ['Oktober', 1030000, 540000, 490000],
+                ['November', 750000, 400000, 350000]
+                ]);
+
+                var options = {
+                };
+
+                var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
+
+                chart.draw(data, google.charts.Bar.convertOptions(options));
+            }
+        </script>
     </head>
     <body>
         <div class="topnav">
@@ -36,7 +60,7 @@
             <div class="dashboard-grid">
                 <!--canvas chart.js nya masukin disini nanti, ini cuma template-->
                 <div class="graphgrid">
-                    <img src="{{asset('assets/images/tabel.png')}}" style="width:100%">
+                    <div id="columnchart_material" class="chart"></div>
                 </div>
                 <div class="graphgrid">
                     <h2>Grafik Penjualan per Bulan</h2>
